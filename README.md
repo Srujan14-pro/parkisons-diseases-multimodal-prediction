@@ -4,40 +4,18 @@ MRI + Speech + Gait Analysis | Late Fusion | Optimization | Streamlit Deployment
 Parkinson’s Disease (PD) is a progressive neurodegenerative disorder that affects motor and speech functions. 
 Early detection is crucial. This project builds a multimodal AI-based diagnostic system that analyzes MRI images, speech recordings, and gait patterns to predict Parkinson’s disease with high accuracy.
 This work integrates deep learning, machine learning, Horned Lizard Optimization Algorithm (HLOA), and late fusion techniques into a single deployed system.
-⭐ Key Features
+ Key Features
 Multi-modal system using:
-🧠 MRI classification with EfficientNet-B4
-🎤 Speech signal analysis using MFCC + ML classifiers
-🚶 Gait pattern analysis (stride length, cadence, variability)
+ MRI classification with EfficientNet-B4 Speech signal analysis using MFCC + ML classifiers
+ Gait pattern analysis (stride length, cadence, variability)
 Late Fusion Technique to combine probabilities from all three models
 Horned Lizard Optimization (HLOA) for hyperparameter tuning
 Streamlit Web App Deployment (User uploads MRI/Speech/Gait data)
 98% Accuracy (MRI model), strong performance across all modalities
 Explainability Ready (GradCAM, feature visualizations – optional)
 
-📁 Project Structure
-parkinsons-multimodal/
-│
-├── models/
-│   ├── efficientnet_mri.h5
-│   ├── speech_rf.pkl
-│   └── gait_model.pkl
-│
-├── app.py              
-├── preprocessing/
-│   ├── mri_utils.py
-│   ├── speech_utils.py
-│   └── gait_utils.py
-│
-├── notebooks/
-│   ├── MRI_training.ipynb
-│   ├── Speech_training.ipynb
-│   └── Gait_training.ipynb
-│
-├── requirements.txt
-└── README.md
 
-🧠 Model Details
+ Model Details
 1️⃣ MRI Classification (Deep Learning)
 Model: EfficientNet-B4
 Transfer learning + fine-tuning
@@ -73,7 +51,7 @@ Gait: 0.25
 
 If one input is missing, weights auto-normalize.
 
-🚀 Streamlit Web App
+ Streamlit Web App
 
 A simple and intuitive UI where users can:
 Upload MRI image
@@ -94,7 +72,7 @@ MRI prediction page
 Gait analysis page
 Speech analysis page
 (You can add screenshots here)
-🛠️ Tech Stack
+ Tech Stack
 Deep Learning
 TensorFlow / Keras
 EfficientNet
@@ -118,14 +96,14 @@ MRI	EfficientNet-B4	97.6%
 Speech	Random Forest	94–96%
 Gait	ML Classifier	91–95%
 Late Fusion	Weighted Voting	98%+
-🧪 Future Improvements
+Future Improvements
 Add Grad-CAM visualizations for MRI
 Integrate LSTM models for gait time-series
 Build a cloud deployment (AWS/Render/HuggingFace)
 Add explainability (SHAP) for speech + gait
 Expand dataset with clinical contributions
 Feel free to submit pull requests or open issues.
-📜 License
+
 MIT License 
  Author
 Srujan
